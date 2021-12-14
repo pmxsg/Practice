@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>Making Web</title>
+    <style>
+        .container{
+            background-color: lavender;
+            display: flex;
+            flex-direction: column
+           }
+        body{
+            width: 900px;
+            border: 1px solid blue;
+        }
+        header{
+            border-bottom:1px solid grey;
+            text-align: center;
+           }
+        img{
+            width: 300px;
+            float:left;
+            margin:30px;
+          }
+        main{
+            display: flex;
+            flex-direction: row;
+            }
+
+         #aa{
+            padding-top: 50px;
+            padding-left: 50px;
+            text-align: left;
+            width:800px;
+            color: blue;
+                        }
+        ul{
+            border-right: 1px solid white;
+            width: 200px;
+            }
+        h4{
+          text-align: center;
+        }
+        .styled {
+           width: 150px;
+           height: 90px;
+           border: 0;
+           line-height: 2.5;
+           padding: 0 20px;
+           margin: 30px;
+           font-size: 1rem;
+           text-align: center;
+           color: #fff;
+           text-shadow: 1px 1px 1px #000;
+           border-radius: 60px;
+           background-color: rgba(20, 50, 175, 0.5);
+           background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+           inset -2px -2px 3px rgba(0, 0, 0, .6);
+           cursor: pointer;
+        }
+        .styled:hover {
+           background-color: rgba(0, 5, 10, 1);
+          }
+
+         .styled:active {
+           box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+           inset 2px 2px 3px rgba(0, 0, 0, .6);
+           }
+        .bb{
+
+           }
+       footer{
+           border-top: 1px solid white;
+            text-align: center;
+           padding-top: 50px;
+             }
+    </style>
+
+
+   </head>
+   <body>
+    <div class="container">
+      <header>
+         <h1>웹사이트(Web Site) 만들기</h1>
+
+          <h3>오늘이 항해의 첫날이다!!</h3>
+          <img src="imgs/vessel.PNG" >
+
+
+        <p id="aa"> 코딩 공부를 하면서 하나씩 배워갈 때마다 만들어 본 웹페이지들을
+          계속 기록해 보면 점점 발전하고 있는지 확인할 수 있지 않을까 하는 생각에
+          이미 만들어진 웹페이지를 그대로 남겨두고 업그레이드 한 새로운 버전들과
+          비교해보면 코딩 공부에 도움이 될까 해서 시작하고자 한다.
+         </p>
+     </header>
+      <h4>Version History</h4>
+     <main>
+        <div class="bb">
+          <button class="favorite styled" type="button" onclick="location.href='http://127.0.0.1/Web/V1/index1.html'">Version 1</button>
+          <button class="favorite styled" type="button" onclick="location.href='http://127.0.0.1/Web/V2/index2.html'">Version 2</button>
+          <button class="favorite styled" type="button" onclick="location.href='http://127.0.0.1/Web/V3/index3.html'">Version 3</button>
+          <button class="favorite styled" type="button" onclick="location.href='http://127.0.0.1/Web/V4/index4.html'">Version 4</button>
+        </div>
+
+         <div class="bb">
+           <button class="favorite styled" type="button" onclick="location.href='http://127.0.0.1/Web/V5/index5.html'">Version 5</button>
+           <button class="favorite styled" type="button" onclick="location.href='6JavaScript.html'">작업중</button>
+           <button class="favorite styled" type="button" onclick="location.href='7HTTP.html'">작업중</button>
+           <button class="favorite styled" type="button" onclick="location.href='8Db.html'">작업중</button>
+          </div>
+
+          <div class="bb">
+            <button class="favorite styled" type="button" onclick="location.href='9Hosting.html'">작업중</button>
+            <button class="favorite styled" type="button" onclick="location.href='.html'">작업중</button>
+            <button class="favorite styled" type="button" onclick="location.href='.html'">작업중</button>
+            <button class="favorite styled" type="button" onclick="location.href='.html'">작업중</button>
+           </div>
+     </main>
+
+     <footer> copyright </footer>
+
+     </div>
+
+   </body>
+  </html>
