@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Making Web V5</title>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;
+     width: 1000px;
+     line-height: 200%;
+     background-color: lavender;
+   }
+  h1{
+    border-bottom: 3px solid darkgray;
+    text-align: center;
+    color: darkgray;
+    background-color: azure;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  h2{
+    padding-left: 30px;
+    color: purple;
+    text-decoration: underline;
+  }
+  ul{
+    list-style: none;
+  }
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color:skyblue;
+  opacity: 0.7;
+  width: 25%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: purple;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: powderblue;
+  font-weight: bold;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: powderblue;
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 15px 20px;
+  border-left: none;
+  width: 75%;
+  height: 300px;
+}
+h6{
+  text-align: center;
+}
+</style>
+
+</head>
+<body>
+
+<h1>웹사이트(Web Site) 만들기</h1>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openContents(event, 'Cover')" id="defaultOpen">Cover</button>
+  <button class="tablinks" onclick="openContents(event, 'Internet')">Internet vs Web</button>
+  <button class="tablinks" onclick="openContents(event, 'Webpage')">Webpage & Website</button>
+  <button class="tablinks" onclick="openContents(event, 'Client')">Client vs Server</button>
+  <button class="tablinks" onclick="openContents(event, 'HTML')" >HTML</button>
+  <button class="tablinks" onclick="openContents(event, 'CSS')">CSS</button>
+  <button class="tablinks" onclick="openContents(event, 'JavaScript')">JavaScript</button>
+  <button class="tablinks" onclick="openContents(event, 'HTTP')" >HTTP</button>
+  <button class="tablinks" onclick="openContents(event, 'DB')">DataBase</button>
+  <button class="tablinks" onclick="openContents(event, 'Hosting')">Hosting</button>
+
+</div>
+<div id="Cover" class="tabcontent">
+  <h2> WebSite 만들기</h2>
+  <img src='http://127.0.0.1/Web/imgs/vessel.PNG' style="float: left;  margin-right: 20px; margin-bottom: 10px;  width:300px; height:400px;">
+   <p>
+     홈페이지를 막연히 만들고 싶다는 생각으로 어떻게 시작해야 하나 하고 찾아보다가 우연히 알게 된 <strong>
+     <a href="https://opentutorials.org/course/1">생활코딩</a></strong>이라는 웹사이트가 있었다.
+     이 웹사이트는 일반인에게 프로그래밍을 알려주는 무료 온라인, 오프라인 수업이다.<br>
+      정말 왕초보인 나로서는 무작정 따라하기를 시전해 보고 있다.<br><br>
+      실력을 빨리 늘리고 싶다면 직접 만들어 보고, 무엇이 어려운지를 강하게 겪어봐야 한다는 조언에 따라 무작정
+      만들기를 시작하고자 한다.<br>
+      강의를 들으면서 배운 내용을 하나씩 적용해 가며 점점 발전된 웹페이지를 모아 마지막에는 볼만한 나만의
+      웹사이트를 만드는 것이 목표이다.<br>
+       우선, 수업을 들으면서 알게 된 내용들을 하나씩 정리하며 정보의 저장소로서의 웹사이트를 만들고자 한다.<br><br>
+       <u>Version : TAB 형태를 이용한 웹페이지 (2021.12.13)</u>
+  </p>
+</div>
+<div id="Internet" class="tabcontent">
+  <h2>Internet vs Web</h2>
+  <img src="http://127.0.0.1/Web/imgs/p1.png" style="margin-left: 100px; width:300px; height:200px;" >
+  <p>
+      <strong><u>인터넷(Internet)</u></strong>이 도로라면 <strong><u>웹(Web)</u></strong>은 도로 위를 달리는 자동차 한 대이다.<br>
+  벤다이어그램으로는 그림처럼 인터넷(Internet)이라는 통신망 안에서 웹(Web), 이메일(E-Mail) 등을 사용하고 있다는 것이다.
+  인터넷은 1960년에 미국에서 군사적 목적으로 분산된 통신시스템을 구축하는 과정에서 만들어진 것이고, 웹은 1990년에 스위스 유럽입자물리연구소 팀 버너스 리라는 분이 인터넷에서 활용할 수 있는 세계 최초 웹브라우저를 만들었다고 한다. 이 웹브라우저의 이름이 그 유명한 "따따따"-"WWW"-월드와이드웹(World Wide Web)이라고 한다.
+  </p>
+
+</div>
+
+<div id="Webpage" class="tabcontent">
+  <h2>WebPage & WebSite</h2>
+  <p> <strong> 웹 페이지(Web Page) </strong>는 월드 와이드 웹 상에 있는 개개의 문서를 가리킨다. <br>
+     웹 사이트(Web Site) 개발자의 입장에서 <strong>홈페이지(Home Page)</strong>는 사용자가 웹 상에서 어떤 사이트를 선택했을 때 제일 먼저 보여지는 웹 페이지를 말한다.<br>
+     책에서의 페이지와는 달리, 두 개 이상의 웹 페이지들을 서로 하이퍼링크로 연결시킬 수 있다는 점이 특징이다.<br>
+     대부분의 웹 페이지는 웹 서버(Web Server)에 저장되며 HTML(또는 XHTML), CSS, 자바스크립트, 그림, 플래시와 같은 동영상으로 구성되어 있다.
+     이러한 웹 페이지들은 HTTP를 통해 전송하거나 받아온다.<br>
+     일반적으로 대부분의 인터넷 사용자들은 컴퓨터의 웹 브라우저를 통해 웹 페이지들을 읽는다.<br><br>
+     또한 의미가 같은 웹 페이지들의 모임을 <strong>웹 사이트(Web Site)</strong>라고 한다.
+  </p>
+</div>
+
+<div id="Client" class="tabcontent">
+  <h2>Client vs Server</h2>
+  <img src="http://127.0.0.1/Web/imgs/cs.png" style="margin-left: 70px; width:600px">
+  <p>
+      일반적으로 상하 또는 주종 관계로 표현되는 서비스를 공급하는 제공자를 서버(Server)라 하고,
+    서비스를 제공받는 고객 즉, 클라이언트라는 관계가 형성된다.<br><br>
+      웹(Web)에서 한정한다면, 웹 브라우저 (크롬,익스플로어,사파리 등)가 클라이언트라 할 수 있고,
+    웹 서버 ( 아파치(Apache), 엔진엑스(nginx), 마이크로소프트사의 IIS(Internet Information Services) 등)가 서버라 할 수 있다.<br><br>
+    웹 브라우저, 즉 크롬이나 익스플로어 등에서 내가 원하는 웹페이지 주소를 입력하는 행동은 이 웹 브라우저가 웹 서버에 요청하는 것을 의미하고,
+     이 웹서버는 그 입력된 주소를 찾아 응답을 하면 웹 브라우저에 그 웹페이지가 나타난다는 것이다. 이것이 인터넷이 작동하는 기본 원리라고 한다.
+      여기서 요청을 하는 웹 브라우저를 클라이언트, 즉 요청을 하는 고객이라는 비유로 해서 클라이언트라고 정했다고 한다. 그리고 응답하는 웹서버를 사업자라는 개념으로 서버라고 정했다고 한다.<br>
+    따라서, 웹 개발을 위한 언어를 구분한다면, 클라이언트 즉, 웹 브라우저 관련 언어는 HTML, CSS, JavaScript 등이 있고,
+    웹 서버 관련 언어는 PHP, Node.js, MySQL 등이 있다. 이 둘에 대하여 프론트엔드(Front-end)와 백엔트(Back-end)로 구분하기도 한다.
+  </p>
+</div>
+
+<div id="HTML" class="tabcontent">
+  <h2>HTML(Hypertext Markup Language)이란</h2>
+  <img src="http://127.0.0.1/Web/imgs/HTML.png" style="float: left;  margin-right: 20px; margin-bottom: 10px;  width:200px; height:200px;" >
+  검색사이트에서 HTML을 찾아보면
+      <ul>
+        <li>* 웹 문서를 만들기 위하여 사용하는 기본적인 웹 언어의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다.</li>
+        <li>* 인터넷 웹 페이지를 만들 때 사용하는 표준 마크업 언어</li>
+        <li>* 제목(headings), 단락(paragraphs), 목록(lists), 링크(links) 등으로 텍스트의 구조적 의미를 나타내는 마크업 언어로, 구조화된 문서를 만든다. 또 하이퍼텍스트 기능을 이용하여 외부 웹 페이지나 파일 등 다른 리소스에 연결하는 방법을 제공한다. 일반적으로 약어 에이치티엠엘(HTML)로 사용한다.</li>
+        <li>* HTML은 1989년 영국의 컴퓨터 과학자인 팀 버너스 리(Tim Berners-Lee)에 의해 고안되어 1991년 말에 최초로 공개되었다. HTML은 웹을 통한 정보 교환을 목적으로 탄생되었으며, 문법 체계가 비교적 간단하고 배우기 쉬워 빠르게 웹 표준으로 자리 잡았다. 문자뿐만 아니라 이미지, 오디오, 비디오 등을 포함하는 것이 가능하며, 사용자들은 웹 브라우저를 통해 HTML 문서를 볼 수 있다.
+        HTML 문서는 텍스트 에디터(예: 메모장)로 작성할 수 있다. 작성 후 파일 확장자를 ‘*.htm’이나 ‘*.html’로 저장하며, 웹 브라우저에서 파일을 로딩하여 볼 수 있다.
+        </li>
+        <li>* HTML 표준은 웹 표준화 단체인 월드와이드웹 컨소시엄(W3C: World Wide Web Consortium)과 왓더블유지(WHATWG: Web Hypertext Application Technology Working Group)를 중심으로 지속적으로 개발되고 있다. 2017년 12월 최신 버전인 HTML 5.2가 발표되었다.<br>
+        ※ WHATWG: 웹 발전을 위해 2004년에 모질라(Mozilla), 애플(Apple) 등 브라우저 개발 업체 주축으로 결성된 웹 HTML 응용 기술 작업 그룹. ‘왓더블유지’로 읽는다. 2014년에 국제표준으로 제정된 HTML5 표준은 WHATWG에서 시작되었다.</li>
+      </ul>
+
+</div>
+
+<div id="CSS" class="tabcontent">
+  <h2>CSS : Cascading Style Sheets</h2>
+  <img src="http://127.0.0.1/Web/imgs/css.png" style="float: left;  margin-right: 20px; margin-bottom: 10px;  width:200px; height:200px;" >
+  검색사이트에서 CSS을 찾아보면
+
+   <p> 종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 스타일 언어(style sheet language)로, HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.<br>
+   기본 파일명은 style.css이다.<br>
+   마크업 언어(ex: HTML)가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리처럼 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.</p> <br>
+
+   정리하자면,
+    <ol>
+        <li>Cascading Style Sheets 는 documents가 사용자에게 어떻게 보여질까를 기술하는 언어이다.</li>
+        <li>HTML이 정보를 표현한다면 CSS는 HTML문서를 시작적으로 이쁘게 꾸며주는 역할을 한다.</li>
+        <li>정보(HTML)와 디자인(CSS)를 분리하여 관리할 수 있다. 즉, 정보를 수정하지 않고 디자인만 변경할 수 있다.</li>
+
+    </ol>
+</div>
+
+<div id="JavaScript" class="tabcontent">
+  <h2>JavaScript</h2>
+  <img src="http://127.0.0.1/Web/imgs/javascript.png" style="float: left;  margin-right: 20px; margin-bottom: 10px;  width:200px; height:200px;" >
+  검색사이트에서 을 찾아보면
+   <p >자바스크립트(영어: JavaScript)는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 프로그래밍에도 사용되고 있다. 자바스크립트는 본래 넷스케이프 커뮤니케이션즈 코퍼레이션의 브렌던 아이크(Brendan Eich)가 처음에는 모카(Mocha)라는 이름으로, 나중에는 라이브스크립트(LiveScript)라는 이름으로 개발하였으며, 최종적으로 자바스크립트가 되었다. 자바스크립트가 썬 마이크로시스템즈의 자바와 구문이 유사한 점도 있지만, 이는 사실 두 언어 모두 C 언어의 기본 구문에 바탕을 뒀기 때문이고, 자바와 자바스크립트는 직접적인 연관성은 약하다. 이름과 구문 외에는 자바보다 셀프나 스킴과 유사성이 많다. </p>
+   <p>솔직히 정확한 의미는 이해하기 힘들지만, 내가 이해한 바로는 "프로그래밍 언어"라는 것이고, 웹브라우저 내에서 활용하기 좋은 프로그래밍 언어라는 것이다.</p>
+
+</div>
+
+
+<div id="HTTP" class="tabcontent">
+  <h2>HTTP(Hyper Text Transfer Protocol)</h2>
+  <img src="http://127.0.0.1/Web/imgs/http.png" style="margin-left: 70px; width:600px">
+ <p>
+   인터넷에서, 웹 서버와 사용자의 웹 브라우저 사이에 문서를 전송하기 위해 사용되는
+   통신 규약을 말한다.<br>
+   HTTP는 메시지의 구조를 정의하고, 클라이언트와 서버가 어떻게 메시지를 교환하는지를
+   정해 놓은 프로토콜로 클라이언트 프로그램과 서버 프로그램은 HTTP 메시지를 교환함으로써
+   서로 대화한다. 웹사이트 중 http로 시작되는 주소는 이런 규칙으로 하이퍼텍스트를
+   제공한다는 의미를 담고 있다.<br>
+    컴퓨터 간에 서로 통하는 언어로 컴퓨터 간에 자료를 주고받을 때 사용되는 기본 언어다.
+    원래는 조약 원안ㆍ의정서 등을 뜻하는 외교용어지만 컴퓨터 용어로는 통신회선을 이용하여
+    컴퓨터와 컴퓨터, 컴퓨터와 단말기끼리 데이터를 주고받을 경우의 상호약속, 즉
+    <strong>통신규약</strong>을 뜻한다.
+ </p>
+</div>
+
+
+<div id="DB" class="tabcontent">
+  <h2>Data Base</h2>
+  <h4><u>[ 발췌 ]데이터베이스 (컴퓨터 개론, 2013. 3. 10., 김종훈, 김종진)</u></h4>
+   <p>
+    한 대학에서 학생 관리 프로그램, 교수 관리 프로그램, 성적 관리 프로그램의 3개의 응용
+    프로그램을 갖추고 있다고 하자. 학생 관리 프로그램은 학생 정보를 저장하고 있는 파일을
+    이용하고, 교수 관리 프로그램은 교수 정보 파일 그리고 성적 관리 프로그램은 성적 정보
+    파일을 이용한다. 즉 다음과 같이 각각의 응용 프로그램들은 개별적인 파일을 이용한다.
+   </p>
+   <div class="center">
+     <img src="http://127.0.0.1/Web/imgs/db1.jpg" style="margin-left: 100px">
+   </div>
+
+    <h6>개별적인 파일을 이용하는 응용 프로그램들</h6>
+    <p>
+      이런 경우의 파일에는 많은 정보가 중복 저장되어 있다. 그렇기 때문에 중복된 정보가
+      수정되면 관련된 모든 파일을 수정해야 하는 불편함이 있다. 예를 들어, 한 학생이 자퇴하게
+      되면 학생 정보 파일뿐만 아니라 교수 정보 파일, 성적 정보 파일도 수정해야 한다.<br>
+
+      이런 문제점을 해결하기 위해 나온 개념이 데이터베이스다. 데이터베이스(DB : DataBase)란
+      어느 한 조직의 여러 응용 프로그램들이 공유하는 관련 데이터들의 모임이다.<br>
+
+      앞의 사례에 적용하면, 대학 내 서로 관련 있는 데이터들을 하나로 통합하여 데이터베이스로
+      구축하고, 학생 관리 프로그램, 교수 관리 프로그램, 성적 관리 프로그램은 이 데이터베이스를
+      공유하며 사용하게 된다.<br>
+
+    </p>
+    <img src="http://127.0.0.1/Web/imgs/db2.jpg" style="margin-left: 100px" >
+    <h6>하나의 데이터베이스를 공유하는 응용 프로그램들</h6>
+
+</div>
+
+
+<div id="Hosting" class="tabcontent">
+  <h2>Hosting & Cloud</h2>
+  <img src="http://127.0.0.1/Web/imgs/hosting.png" style="margin-left: 70px; width:600px">
+ <p>
+   호스팅(Hosting) 이란 어떤 서비스를 빌려서 사용한다는 말이다.
+   특히, 웹상에서 말하는 호스팅이란 외부의 서버를 빌려서 사용한다는 말을 의미한다.<br>
+   호스팅은 크게 웹 호스팅, 서버 호스팅, 클라우드 호스팅으로 분류한다.<br>
+   웹 호스팅은 웹서버를 직접 설치하지 않고도 인터넷에 홈페이지를 개설,운영할 수 있게
+   세팅이 완료된 웹서버의 일정공간을 임대하여, 사용자가 직접 서버를 운영하는 것과 같은
+   효과를 제공하는 네트워크 서비스입니다.<br>
+   서버 호스팅은 직접 사용자가 서버를 임대하여 사용하는 서비스이다.<br>
+   클라우드 호스팅은 말그대로 클라우드 서버를 사용하는 호스팅 서비스다.<br><br>
+   웹 호스팅의 경우 서버중 '일부'만 빌리는 서비스라면 서버 호스팅은 서버 하나를
+   통째로 구매할 수 있으며 서버 운영에 필요한 인프라와 기술력까지 제공받을 수 있는
+   서비스이다.<br>
+   전자의 경우 저렴한 가격으로 서버 및 인프라의 구축이 필요 없지만 서버의 일부분만
+   사용하기 때문에 사용량이 제한되고 서버 관리 권한이 없다. 따라서 소규모 웹사이트에
+   주로 사용되고 <br>
+   후자의 경우 서버 관리에 대한 직접권한을 갖고 서버를 단독으로 사용하기 때문에 보안상으로도
+   유리하지만 초기 구축단계에서 웹호스팅에 비해 시간과 비용이 많이 든다는 단점이 있다.
+   이 경우에는 주로 회사의 인터라넷, 대형 쇼핑몰 등 고정적으로 대용량 트래픽과 DB가 많이
+   사용되는 곳에 사용 된다.<br>
+   클라우드는 여러 개의 건물을 많은 사람들이 자유롭게 이용할 수 있도록 권한을 주는 것이다.
+   단, 돈을 미리 내야 입주할 수 있는 다른 호스팅과는 달리, 이용한 영역만큼의 비용을 추후에
+   지불하는 구조다. 클라우드를 이용할 경우 높은 트래픽에도 대응할 수 있을 만큼 거의 무제한의
+   능력을 제공해준다. <br>
+ </p>
+
+</div>
+
+<script>
+function openContents(evt, webContents) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(webContents).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
