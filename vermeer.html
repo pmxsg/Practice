@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <title>Johanes Vermeer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    h1{
+      text-align: center;
+      color: purple;
+      }
+      h2{
+        text-align: center;
+      }
+      .total{
+        flex: column;
+        width: 1000px;
+        line-height: 200%;
+      }
+      .Paintings{
+        column-count: 2;
+        margin-right: 2px;
+        margin-bottom: 30px;
+      }
+      .contents{
+        margin-left: 10px;
+        padding-top: 100px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+        background-color: lavender;
+      }
+      img{
+        width: 500px;
+        border: 2px solid grey;
+      }
+      .button {
+        background-color: skyblue;
+        border: 2px solid skyblue;
+        font-weight: bold;
+        color: white ;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: underline;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 12px;
+        width: 200px;
+        transition: all 0.9s, color white;
+        cursor: pointer;
+       }
+       .button:hover{
+        background-color: green;
+        pointer-events: auto;
+       }
+       footer{
+         padding-top: 50px;
+         padding-bottom: 10px;
+         border-top: 1px solid grey;
+         border-bottom: 1px solid grey;
+         text-align: center;
+       }
+       .foot{
+         background-color: DodgerBlue;
+         border: none;
+         color: white;
+         padding: 12px 16px;
+         font-size: 16px;
+         cursor: pointer;
+         border-radius: 12px;
+
+       }
+    </style>
+
+    <script>
+      alert('현재까지 8점의 작품이 업데이트 되었습니다.')
+    </script>
+   </head>
+   <body>
+     <div class="total">
+
+       <header>
+         <h1>요하네스 베르메르</h1>
+         <h1>Johannes Jan Vermeer</h1><br>
+
+         <h2>생애(1632~1675)</h2><br>
+
+         <p>네덜란드의 황금시대라고하는 17세기를 대표하는 화가 중 하나로 델프트에서 태어나
+           활동하다 세상을 떠났으며, 남아있는 작품은 37점으로 많지 않은 편이다.<br>
+           그의 생애에 대해서는 자세하게 알려져 있는 것이 거의 없다. 그는 1632년 10월 31일
+           델프트의 니외베 케르크에서 세례를 받았으며, 두 번째 아이였고 독자였다.
+           그의 아버지 라이니에르 얀츠(Reynier Jansz)는 원래 안트베르펜 출신이었고,
+           1611년 암스테르담으로 가서 그곳에서 견직공으로 일했다. 1615년 그의 아버지는 디그나
+           발텐스와 결혼을 하고, 보스라는 이름으로 델프트로 갔다. 그리고 그곳에서 여관을 운영했다.
+           부업으로 그는 계속 직물공으로 일을 했으며, 수공업자로 델프트에 있는 성 루가 길드에
+           공식적으로 가입했다. 그곳에서 얀츠는 피터르 스텐비크(Pieter Steenwyck), 발타사르 판
+           데르 아스트(Balthasar van der Ast )와 피터르 그뢰네베겐(Pieter Groenewegen)과 같은
+           화가들과 만났다.<br><br>
+
+           (출처 : <a href="https://ko.wikipedia.org/wiki/%EC%9A%94%ED%95%98%EB%84%A4%EC%8A%A4_%ED%8E%98%EB%A5%B4%EB%A9%94%EC%9D%B4%EB%A5%B4" target="_blank">위키피디아</a> )
+         </p>
+
+       </header>
+
+       <main>
+         <h2>베르메르 작품들</h2><br>
+
+         <div class="Paintings">
+            <img src="Girl_with_a_Pearl_Earring.jpg"
+              alt="진주귀걸이를 한 소녀 Girl with a Pearl Earring" ><br>
+
+            <div class="contents">
+                <h3>진주 귀걸이를 한 소녀 <br>Girl with a Pearl Earring</h3>
+                <p> 1665~1666년경 <br>
+                    캔버스에 유채 <br>
+                    74.5X39 cm <br>
+                    마우리츠하위스 미술관 (Mauritshuis)<br>
+                    (렘브란트와 베르메르의 작품을 비롯한
+                    네덜란드 정부 소유의 회화 작품 수백 점을 소장하고 있는 미술관입니다.)
+
+                </p><br>
+                <button class="button" type="button" onclick="window.open('Girl_with_a_Pearl_Earring.jpg')">큰화면</button>
+                <button class="button" type="button" onclick="window.open('https://www.mauritshuis.nl/en/')">미술관가기</button><br>
+                <p>영화화가 되면서 더 유명해진 그림</p>
+            </div>
+          </div>
+
+          <div class="Paintings">
+             <img src="The_Milkmaid.jpg"
+                 alt="우유 따르는 여인(하녀) The_Milkmaid"  >
+
+              <div class="contents">
+                  <h3>우유 따르는 여인(하녀) <br>The Milkmaid</h3>
+                  <p> 1658~1660년 <br>
+                        캔버스에 유채 <br>
+                        45.5 x 41 cm <br>
+                        암스테르담 국립미술관 <br>
+                   </p><br>
+                   <button class="button" type="button" onclick="window.open('The_Milkmaid.jpg')">큰화면</button>
+                   <button class="button" type="button" onclick="window.open('https://www.rijksmuseum.nl/en')">미술관가기</button><br>
+               </div>
+          </div>
+
+           <div class="Paintings">
+               <img src="The_Glass_of_Wine.jpg"
+                        alt="포도주 마시는 여인 A lady drinking and a Gentlemen" >
+
+               <div class="contents">
+                   <h3>포도주 마시는 여인 <br> A lady drinking and a Gentlemen</h3>
+                   <p> 1660~1661년 <br>
+                          캔버스에 유채 <br>
+                            77 x 65 cm <br>
+                            베를린 국립 회화관<br>
+                   </p><br>
+                   <button class="button" type="button" onclick="window.open('The_Glass_of_Wine.jpg')">큰화면</button>
+                   <button class="button" type="button" onclick="window.open('https://www.smb.museum/en/museums-institutions/gemaeldegalerie/home/')">미술관가기</button><br>
+               </div>
+           </div>
+
+            <div class="Paintings">
+                <img src="Woman_with_a_Lute_near_a_window.jpg"
+                     alt="튜트를 든 여인 Woman_with_a_Lute_near_a_window.jpg">
+
+                 <div class="contents">
+                     <h3>튜트를 든 여인 <br> Young Woman with a Lute </h3>
+                     <p> 1662~1663년 <br>
+                        캔버스에 유채 <br>
+                        51.4 x 45.7 cm <br>
+                        메트로 폴리탄 미술  <br>
+                     </p><br>
+                     <button class="button" type="button" onclick="window.open('Woman_with_a_Lute_near_a_window.jpg')">큰화면</button>
+                     <button class="button" type="button" onclick="window.open('https://www.metmuseum.org/')">미술관가기</button><br>
+                 </div>
+            </div>
+
+            <div class="Paintings">
+                  <img src="Woman_reading_a_letter.jpg"
+                         alt="편지를 읽는 여인 Woman_reading_a_letter">
+
+                  <div class="contents">
+                      <h3>편지를 읽는 여인 <br> Woman Reading a Letter </h3>
+                      <p> 1662~1663년 <br>
+                            캔버스에 유채 <br>
+                            51.4 x 45.7 cm <br>
+                           암스테르담 국립 미술관<br>
+                      </p><br>
+                      <button class="button" type="button" onclick="window.open('Woman_reading_a_letter.jpg')">큰화면</button>
+                      <button class="button" type="button" onclick="window.open('https://www.rijksmuseum.nl/en')">미술관가기</button><br>
+                  </div>
+            </div>
+
+            <div class="Paintings">
+                  <img src="Lady_Standing_at_a_Virginal.jpg"
+                       alt="버지널 앞에 서 있는 여인 Lady_Standing_at_a_Virginal">
+                   <div class="contents">
+                       <h3>버지널 앞에 서 있는 여인 <br> Lady Standing at a Virginal</h3>
+                       <p> 1670~1672년 <br>
+                             캔버스에 유채 <br>
+                             51.7 x 45.2 cm <br>
+                             내셔널 갤러리 <br>
+                       </p><br>
+                       <button class="button" type="button" onclick="window.open('Lady_Standing_at_a_Virginal.jpg')">큰화면</button>
+                       <button class="button" type="button" onclick="window.open('https://www.nationalgallery.org.uk/')">미술관가기</button><br>
+                    </div>
+              </div>
+
+              <div class="Paintings">
+                    <img src="Woman_Writing_a_Letter_with_her_Maid.jpg"
+                         alt="편지를 쓰는 숙녀와 하녀 Woman_Writing_a_Letter_with_her_Maid">
+                     <div class="contents">
+                         <h3>편지를 쓰는 숙녀와 하녀 <br> Woman Writing a Letter with her Maid</h3>
+                         <p> 1670년 <br>
+                             캔버스에 유채 <br>
+                             71.1 x 60.5 cm <br>
+                            아일랜드 국립미술관 <br>
+                         </p><br>
+                         <button class="button" type="button" onclick="window.open('Lady_Standing_at_a_Virginal.jpg')">큰화면</button>
+                         <button class="button" type="button" onclick="window.open('https://www.nationalgallery.ie')">미술관가기</button><br>
+                      </div>
+             </div>
+
+              <div class="Paintings">
+                    <img src="The_Artists_Studio.jpg"
+                         alt="화가의 아틀리에 The_Artists_Studio">
+                     <div class="contents">
+                         <h3>화가의 아틀리에 <br> The Artist's Studio</h3>
+                         <p> 1666-68년경 <br>
+                             캔버스에 유채 <br>
+                             120 x 100 cm <br>
+                             빈 미술사 미술관  <br>
+                         </p><br>
+                         <button class="button" type="button" onclick="window.open('The_Artists_Studio.jpg')">큰화면</button>
+                         <button class="button" type="button" onclick="window.open('https://www.khm.at/en/')">미술관가기</button><br>
+                      </div>
+                </div>
+       </main>
+
+       <footer>
+             <button class="foot" onclick="location.href='http://127.0.0.1/Artist/index.html'"><i class="fa fa-home"></i> Home</button>
+       </footer>
+     </div>
+
+    </body>
+
+
+  </html>
