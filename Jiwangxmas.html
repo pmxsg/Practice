@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Chirstmas !!</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="snowfall.jquery.js"></script>
+    <script type='text/javascript'>
+          $(document).ready(function(){
+               $(document).snowfall({
+                   minSize: 5,
+                   maxSize: 10,
+                   round : true,
+                   shadow:true
+                })
+           });
+       /*$(element).snowfall({image :"images/flake.png", minSize: 10, maxSize:32});
+       snowFall.snow(elementCollection, {image : "images/flake.png", minSize: 10, maxSize:32});*/
+    </script>
+     <style>
+
+        body {
+            background-color: #9b070f;
+             }
+
+        .envelope {
+
+            width: 300px;
+            height: 300px;
+
+            background-image: url('http://127.0.0.1/My%20Atelier%20Project/envelop2.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .envelope:hover{
+          transform :scale(2.0);
+          transition: all 1s;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+
+            width: 450px;
+            height: 300px;
+
+            background-image: url('http://127.0.0.1/My%20Atelier%20Project/christmas-card.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            margin: 100px auto 0px auto;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: wheat;
+
+            width: 400px;
+            margin: auto;
+
+            color: brown;
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 400px;
+                padding: 20px;
+              }
+
+            .rtan {
+                width: 400px;
+                height: 300px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+        }
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg"> 지왕아! 봉투를 열어봐!</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>2021년 수고 많았어!</h1>
+        <div class="messagebox">
+            이제 고등학생이 되는 지왕이 <br />
+            중딩에 마지막 크리스마스를 <br />
+            즐겁게 잘 보내고 <br />
+            새해에는 모든 일 잘 되기를... <br />
+            2021.12.24 아빠가  <br />
+            <p class="from"> </p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
