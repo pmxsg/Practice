@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    border-bottom:1px solid gray;
+    padding-left:20px;
+}
+footer{
+    border-top:1px solid gray;
+    padding:20px;
+    text-align: center;
+}
+.content{
+    display:flex;
+}
+.content nav{
+    border-right:1px solid gray;
+}
+.content aside{
+    border-left:1px solid gray;    
+}
+nav, aside{
+    flex-basis: 150px;
+    flex-shrink: 0;   
+}
+main{
+    padding:10px;
+}
+/* 추가분 */
+.clearfix {
+          overflow: auto;
+          border: 3px solid #4CAF50;
+          padding: 5px;           
+          
+        }
+  #img1{ width : 200px ;
+         float:left; 
+         margin : 20px;
+  }
+  #img2{ width : 400px; 
+         float: right ; 
+         margin : 20px;
+  }
