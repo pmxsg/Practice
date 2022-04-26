@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> Making Web </title>
+<link rel="stylesheet", href="body_style.css">   
+<script>
+function nightBurton(self){
+  var bodys = document.querySelector('body')
+  if(self.value === 'night'){
+    bodys.style.backgroundColor = 'black';
+    bodys.style.color = 'white';
+    self.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'yellow';
+      i = i + 1;
+    }
+  } else {
+    bodys.style.backgroundColor = 'white';
+    bodys.style.color = 'black';
+    self.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'blue';
+      i = i + 1; 
+    }
+  }
+
+}
+
+</script>
+</head>
+<body>
+    <input type="button" value="night" onclick="nightBurton(this);      
+  ">
+  
+  <div class="container">
+    <header>
+        <h1> Java Script </h1>
+    </header>
+    <section class="content">
+        <nav>
+          <ol>
+            <li> <a href = "hello.html"> Hello, World! </a> </li>
+            <li> <a href = "html.html"> HTML </a></li>
+            <li> <a href="internet.html"> 인터넷 과 웹 </a> </li>
+            <li> <a href="css.html"> CSS</a> </li>
+            <li> <a href="0JavaScript.html"> Java Script</a> </li>
+        </ol>
+        </nav>
+        <main>
+            <h2 style="text-align: center;"> Java Script란 ? </h2> 
+        <div class="clearfix">
+           
+
+          
+            <p> 
+                HTML는 내용을 작성하는 정보의 역할, <br> CSS는 디자인을 담당하고, <br>
+                Java Script로는 동작을 구현한다.</p>
+
+             <p>
+                JavaScript는 세계에서 가장 인기 있는 프로그래밍 언어입니다. <br>
+
+                JavaScript는 웹의 프로그래밍 언어입니다.
+                <br>
+                자바스크립트는 배우기 쉽습니다. <br>
+<br>
+                Java Script는 웹 브라우저에서 사용되나, Node.js와 같은 프레임워크를 사용하면 서버 측 프로그래밍에서도 사용할 수 있고, 현재 컴퓨터나 스마트폰 등에 포함된 대부분의 웹 브라우저에는 자바스크립트 인터프리터가 내장되어 있다고 합니다.
+
+​
+
+그만큼 Java Script는 웹상에서는 가장 많이 사용되고 있는 프로그래밍 언어입니다.
+             </p>   
+            <br>
+           
+         </div>
+          <br>
+
+          <h2> Java Script로 할 수 있는 일</h2>
+
+           <div class="clearfix">
+           
+            <p id="demo"> JavaScript는 HTML 콘텐츠를 변경할 수 있습니다</p>            
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'> 확인 </button>
+          </div>
+          <br>
+          <div class="clearfix">
+            <button type="button" onclick="document.write('Hello JavaScript!')"> 확인 </button>
+        </div>
+<br>
+          <div class="clearfix">
+            <p>JavaScript는 HTML 속성(attribute) 값을 변경할 수 있습니다.</p>
+              <p>이 예제에서 JavaScript는 <img> 태그의 src(source) 속성 값을 변경합니다.</p>
+
+              <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif'">Turn on the light</button>
+
+             <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
+
+            <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+           </div>
+<br>
+           <div class="clearfix">
+            <p id="demo1">JavaScript는 HTML 스타일(CSS)을 변경할 수 있습니다.</p>
+
+            <button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+             
+           </div> 
+<br>
+           <div class="clearfix">
+            <p id="demo2"> JavaScript는 HTML 요소를 숨길 수 있습니다.</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='none'"> 숨기기!</button>
+ 
+            
+        </div> 
+<br>
+        <div class="clearfix">
+            <p id="demo3" style="display:none">Hello JavaScript!</p>
+
+            <button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+                 
+            
+        </div> 
+        </main>
+        <aside>
+          <h4 style="text-align: center;"> 코딩공부 참조할 <br>  만한 사이트 </h4>
+
+          <ul>
+          <li> <a href="https://www.w3schools.com/">W3Schools</a></li> 
+          <li><a href="https://opentutorials.org/course/1">생활코딩</a></li>
+          <li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript">Mdn Documents</a></li>
+          <li><a href="http://www.tcpschool.com/">tcp School</a></li>
+          </ul>
+
+
+        </aside>
+    </section>
+    <footer>
+        <a href="index.html">홈페이지</a>
+    </footer>
+</div>
+  
+
+
+</body>
+</html>
